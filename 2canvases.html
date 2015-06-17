@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid #237894"> <!-- the stroke is the number -->
+  Your browser does not support the HTML5 canvas tag.</canvas>
 
-<canvas id="myCanvas" width="300" height="150" style="border:1px solid #237894"> <!-- the stroke is the number -->
-Your browser does not support the HTML5 canvas tag.</canvas>
+  <canvas id="notCanvas" width="200" height="500" style="border:6px solid #000000"> <!-- this is another canvas but better -->
 
-<canvas id="notCanvas" width="200" height="500" style="border:6px solid #000000"> <!-- this is another canvas but better -->
+  <script>
 
-<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillRect(20, 20, 150, 100);
 
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.fillRect(20, 20, 150, 100);
+    var d = document.getElementById("notCanvas");
+    var cty = d.getContext("2d");
+    cty.fillRect(20, 20, 150, 100):
 
-var d = document.getElementById("notCanvas");
-var cty = d.getContext("2d");
-cty.fillRect(20, 20, 150, 100):
-
-</script>
+  </script>
 
 </body>
 </html>
