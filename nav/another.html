@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bootstrap + Canvas</title>
+		<!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<!-- missing the respond.js -->
+
+        <style>
+            .container-main {
+                margin-top: 200px; <!-- padding at the top -->
+            }
+
+            .container-canvas {
+                margin: 0 auto;
+                width: 800px; <!-- from the left -->
+            }
+
+            canvas {
+                border: 1px solid #333; <!-- border of the canvas -->
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar ko acha banana hai -->
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <!-- this makes the bar even more responsive -->
+					<!-- need these for the different values that will show up later -->
+                        <span class="icon-bar"></span> <!-- this is the first -->
+                        <span class="icon-bar"></span> <!-- this is the second -->
+                        <span class="icon-bar"></span> <!-- this is the third -->
+						<span class="icon-bar"></span> <!-- this is the fourth -->
+                    </button>
+                    <a class="brand" href="#">Project name</a> <!-- class is brand! -->
+                    <div class="nav-collapse collapse"> <!-- this opens up the navigation bar and it slides down -->
+                        <ul class="nav"> <!-- this is the navigation bar at the top -->
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-main">
+            <div class="container-canvas">
+			<!-- this is the backup -->
+                <canvas id="mycanvas" width="800" height="480"> <!-- canvas width and height -->
+                    This is my fallback content.
+                </canvas>
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script> /* all the JS goes here */
+            function draw() {
+                var canvas = document.getElementById("mycanvas");
+
+                if (canvas.getContext) { /* this is the reason why canvas became responsive */
+                    var ctx = canvas.getContext("2d"); /* have to make it 2D */
+
+                    ctx.fillStyle = "rgb(200,0,0)"; /* colours as seen here */
+                    ctx.fillRect(10, 10, 55, 50);
+
+                    ctx.fillStyle = "rgba(0,0,200,0.5)"; /* this fills the outside */
+                    ctx.fillRect(30, 30, 55, 50); /* this fills the inside */
+                } else {
+                    alert("Canvas isn't supported.");
+                }
+            }
+
+            $(function() { /* drawing function, everything as stated at the start */
+                draw(); /* this draws the whole canvas and everything on it */
+             });
+        </script>
+    </body>
+</html>
