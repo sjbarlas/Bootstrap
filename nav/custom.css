@@ -1,0 +1,79 @@
+#the-slider img {
+
+width: 100%;
+
+}
+
+
+.navbar {
+
+background-color: #282828;
+
+}
+
+.navbar li a {
+
+color: white !important; /* override */
+
+}
+
+.navbar li a:hover {
+
+color: red !important; /* override */
+
+}
+
+/*.navbar-default .navbar-nav>.active>a{
+
+background-color: blue !important; /* this overrides it */
+
+}*/
+
+
+.glyphicon {
+
+color: #000;
+
+
+} 
+
+.glyphicon.glyphicon-shopping-cart {
+
+
+color: blue;
+
+}
+
+
+.glyphicon.glyphicon-heart {
+
+color: yellow;
+
+}
+
+.btn {
+
+background: red;
+
+}
+
+.btn.first-button {
+
+background: #000;
+
+}
+
+
+footer { 
+
+background: #282828;
+color: #fff;
+margin-top: 20px;
+
+}
+
+/* prevent the '/' from appearing */
+.breadcrumb>li+li:before {
+
+content: none;
+}
