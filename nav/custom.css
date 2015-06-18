@@ -27,7 +27,6 @@ background-color: blue !important; /* this overrides it */
   color: blue;
 }
 
-
 .glyphicon.glyphicon-heart {
   color: yellow;
 }
@@ -39,7 +38,6 @@ background-color: blue !important; /* this overrides it */
 .btn.first-button {
   background: #000;
 }
-
 
 footer { 
   background: #282828;
