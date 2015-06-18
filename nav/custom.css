@@ -1,17 +1,17 @@
 #the-slider img {
-width: 100%;
+  width: 100%;
 }
 
 .navbar {
-background-color: #282828;
+  background-color: #282828;
 }
 
 .navbar li a {
-color: white !important; /* override */
+  color: white !important; /* override */
 }
 
 .navbar li a:hover {
-color: red !important; /* override */
+  color: red !important; /* override */
 }
 
 /*.navbar-default .navbar-nav>.active>a{
@@ -20,34 +20,34 @@ background-color: blue !important; /* this overrides it */
 
 }*/
 .glyphicon {
-color: #000;
+  color: #000;
 } 
 
 .glyphicon.glyphicon-shopping-cart {
-color: blue;
+  color: blue;
 }
 
 
 .glyphicon.glyphicon-heart {
-color: yellow;
+  color: yellow;
 }
 
 .btn {
-background: red;
+  background: red;
 }
 
 .btn.first-button {
-background: #000;
+  background: #000;
 }
 
 
 footer { 
-background: #282828;
-color: #fff;
-margin-top: 20px;
+  background: #282828;
+  color: #fff;
+  margin-top: 20px;
 }
 
 /* prevent the '/' from appearing */
-.breadcrumb>li+li:before {
-content: none;
+  .breadcrumb>li+li:before {
+  content: none;
 }
