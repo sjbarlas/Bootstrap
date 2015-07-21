@@ -100,12 +100,6 @@ body{
 }
 
 
-/* -- Demo ads -- */
-
-@media (max-width: 1200px) {
-	#bsaHolder{ display:none;}
-}
-
 /* -- Link to Tutorialzine -- */
 
 .tz-link{
